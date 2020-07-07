@@ -1,0 +1,548 @@
+@import url('https://fonts.googleapis.com/css?family=Cardo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cardo&family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cardo&family=PT+Serif&family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cardo&family=Playfair+Display&family=Source+Serif+Pro&display=swap');
+
+body {
+  font-family: 'Cardo', 'Playfair Display', 'Source Serif Pro', 'PT Serif', sans-serif;
+  background-color:#000015;
+}
+
+/* Make the image fully responsive */
+     .carousel-inner img {
+       width: 100%;
+       height: 181px;
+     }
+
+/* Global */
+.container{
+	width:100%;
+	margin:auto;
+	overflow:hidden;
+}
+
+.box{
+    float:right;
+	width:35%;
+	padding:10px;
+	margin-top: 0px;
+	margin-bottom: 10px;
+	margin-left: 20px;
+	margin-right:-175px;
+}
+
+.btn-outline-secondary{
+	  width:77%;
+	  float:center;
+	  display:inline-block;
+	  margin-left:11px;
+  }
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float:left;
+  width: 33.33%;
+  height: 33.33%;
+  padding: 5px;
+  margin-left:12px;
+  background-color:#4E5D6C;
+  text-align:center;
+  margin-top:7px;
+  margin-bottom:3px;
+  margin-left:17px;
+}
+
+.column img{
+	height:260px;
+	margin-top:17px;
+}
+
+.column p{
+	color: #ffffff;
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+	font-size:;
+}
+
+.column a:link{
+	text-decoration:none;
+}
+
+#text-info a:link{
+	text-decoration:none;
+}
+
+#branding h1{
+	font-family:'Source Serif Pro';
+	margin-top:7px;
+}
+
+#branding1 h3{
+	color:#ffffff;
+	margin-top:21px;
+	margin-bottom:-24px;
+	font-size:29px;
+	font-family:'Playfair Display';
+}
+
+#branding h3{
+	color:#ffffff;
+	margin-top:21px;
+	margin-bottom:3px;
+	font-size:29px;
+	font-family:'Playfair Display';
+}
+
+.branding h3{
+	color:#ffffff;
+	margin-top:1px;
+	margin-bottom:-3px;
+	font-size:29px;
+	font-family:'Playfair Display';
+}
+
+#main-col h1{
+	margin-top:21px;
+	font-size:27px;
+	font-family:'Playfair Display';
+	margin-bottom:3px;
+	text-align:center;
+}
+
+#main-col p{
+	text-align:center;
+}
+
+#text-info h6{
+	color:#ffffff;
+	margin-bottom:21px;
+	font-family:'Playfair Display';
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 30%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1111px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #ffffff;
+  font-size: 21px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 577px;
+  width: 100%;
+  text-align:center;
+  font-family:'Playfair Display';
+}
+
+.carousel-item-text {
+  color: #ffffff;
+  font-size: 17px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 136px;
+  width: 100%;
+  text-align:center;
+  font-family:'Playfair Display';
+}
+
+.text-info{
+	padding: 8px 12px;
+    position: center;
+	text-align:center;
+	margin-top:40px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 5px;
+  width: 49px;
+  margin: 0 2px;
+  margin-top:17px;
+  margin-bottom:10px;
+  background-color: #bbb;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active1 {
+  background-color:#ffffff;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width:760px) {
+	.slideshow-container{
+		width:auto;
+	}
+  .text {
+	  font-size: 11px;
+}
+}
+
+/* Overlay */
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+
+.left{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.right{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+footer{
+	padding:20px;
+	margin-top:10px;
+	margin-bottom:10px;
+	color:#ffffff;
+	background-color:#;
+	text-align: center;
+}
+
+
+/* On smaller screens, decrease items size */
+@media screen and (max-width:960px){
+	
+  body {
+  font-family: 'Cardo', 'Playfair Display', 'Source Serif Pro', 'PT Serif', sans-serif;
+  background-color:#000015;
+}
+	
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+  
+  #branding h1{
+	font-size:34px;
+	margin-top:7px;
+}
+
+#branding1 h3{
+	color:#ffffff;
+	margin-top:17px;
+	margin-bottom:-27px;
+	font-size:21px;
+}
+
+#branding h3{
+	color:#ffffff;
+	margin-top:21px;
+	margin-bottom:3px;
+	font-size:21px;
+}
+
+.branding h3{
+	color:#ffffff;
+	margin-top:1px;
+	margin-bottom:-3px;
+	font-size:21px;
+}
+
+#main-col h1{
+	margin-top:21px;
+	font-size:21px;
+	margin-bottom:3px;
+	text-align:center;
+}
+
+#main-col p{
+	text-align:center;
+	font-size:11.11px;
+}
+
+#text-info h6{
+	font-size:11px;
+	margin-top:7.77px;
+}
+  
+  p{
+	  font-size:11px;
+	  text-align:center;
+  }
+  
+  .container h2{
+	  font-size:19px;
+	  text-align:center;
+	  display:inline-block;
+	  width:100%;
+  }
+  
+  .column {
+  float:left;
+  width: 27.47%;
+  height: 33.33%;
+  padding: 5px;
+  margin-left:12px;
+  margin-top:7px;
+  margin-bottom:3px;
+  margin-left:16px;
+}
+  
+  .column img{
+	height:111px;
+	margin-top:17px;
+}
+  
+  .column p{
+	color: #ffffff;
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+	font-size:7px;
+	padding-top:7px;
+}
+	
+  .box{
+    float:center;
+	width:60%;
+	padding:10px;
+	margin-top: 0px;
+	margin-bottom: 10px;
+	margin-left:20px;
+	margin-right:75px;
+	display:inline-block;
+}
+
+  .btn-outline-secondary{
+	  width:100%;
+	  float:center;
+	  display:inline-block;
+	  margin-left:0px;
+  }
+  
+  .slideshow-container{
+		width:auto;
+}
+
+  .text{
+	  bottom:161px;
+	  font-size: 11px;
+	  position: absolute;
+	  width: 100%;
+      text-align:center;
+  }
+  
+  /* Make the image fully responsive */
+     .carousel-inner img {
+       width: 100%;
+       height: 68px;
+     }
+  
+  .carousel-item-text {
+  font-size: 9px;
+  position: absolute;
+  bottom: 44px;
+  width: 100%;
+  text-align:center;
+}
+  
+  .dot {
+  height: 5px;
+  width: 21px;
+  margin: 0 2px;
+  margin-top:11px;
+  margin-bottom:3px;
+  display: inline-block;
+}
+  
+}
+
+/* Retina iPad in portrait & landscape */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)
+and (-webkit-min-device-pixel-ratio: 2) {
+  .slideshow-container{
+		width:auto;
+		position: relative;
+        margin: auto;
+}
+  .text{
+	  font-size: 21px;
+	  position: absolute;
+	  width: 100%;
+      text-align:center;
+}
+  .column {
+  float:left;
+  width:;
+  height: 33.33%;
+  padding: 5px;
+  margin-left:12px;
+  margin-top:7px;
+  margin-bottom:3px;
+  margin-left:16px;
+}
+
+  .column p{
+	color: #ffffff;
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+	font-size:17px;
+	padding-top:7px;
+}
+
+  .column img{
+	height:191px;
+	margin-top:17px;
+}
+
+}
+
+/* Retina iPad in landscape */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape)
+and (-webkit-min-device-pixel-ratio: 2) {
+  .slideshow-container{
+		width:auto;
+		position: relative;
+        margin: auto;
+}
+  
+  .text{
+	  bottom:479px;
+	  font-size: 21px;
+	  position: absolute;
+	  width: 100%;
+      text-align:center;
+}
+  
+  .column {
+  float:left;
+  width: 29.92%;
+  height: 33.33%;
+  padding: 5px;
+  margin-left:27px;
+  margin-top:7px;
+  margin-bottom:3px;
+}
+  
+}
